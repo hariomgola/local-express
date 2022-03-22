@@ -4,7 +4,7 @@
   "description": "Express based local server to keep Temperoy server up and running",
   "main": "app.js",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2",
     "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "open": "^8.4.0"
@@ -13,13 +13,24 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "deploy": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hariomgola/local-express.git"
   },
-  "type": "module",
+  "keywords": [
+    "local server",
+    "local-Express",
+    "local-server-expreee",
+    "local-api"
+  ],
+  "engines": {
+    "node": ">= 8.0.0"
+  },
   "author": "hariom.kumar",
   "license": "ISC",
   "bugs": {

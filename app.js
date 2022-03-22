@@ -1,2 +1,18 @@
+#!/usr/bin/env node
+
 "use strict";
-import "./src/app";
+
+const app = require("./src/app");
+const envChange = require("./src/changeEnviournment/env");
+
+// for working with npx
+const open = require("open");
+const env = require("./src/changeEnviournment/enviourment.package.json");
+open(`http://localhost:${env.PORT}`, { app: "chrome" });
+app.startServer();
+
+// for making change to work with local
+// module.exports = {
+//   ...app,
+//   ...envChange,
+// };
