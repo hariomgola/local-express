@@ -1,6 +1,6 @@
 {
   "name": "local-express",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Express based local server to keep Temperoy server up and running",
   "main": "app.js",
   "dependencies": {
