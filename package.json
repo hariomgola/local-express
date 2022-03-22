@@ -3,6 +3,9 @@
   "version": "1.2.0",
   "description": "Express based local server to keep Temperoy server up and running",
   "main": "app.js",
+  "bin": {
+    "hariom": "./app.js"
+  },
   "dependencies": {
     "chalk": "^4.1.2",
     "express": "^4.17.3",
