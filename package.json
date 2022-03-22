@@ -4,7 +4,7 @@
   "description": "Express based local server to keep Temperoy server up and running",
   "main": "app.js",
   "bin": {
-    "local-express": "./app.js"
+    "local-express": "./npxapp.js"
   },
   "dependencies": {
     "chalk": "^4.1.2",
