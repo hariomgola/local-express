@@ -49,7 +49,7 @@ router.get(`/${routerGetURL}`, (req, res) => {
     let InputData = req.body.InputData;
     let OutputData = req.body.OutputData;
     res.status(statuscode).send({
-      OutputData,
+      ...OutputData,
       OtherInformation: { InputData },
     });
   } catch (e) {
@@ -74,7 +74,7 @@ router.post(`/${routerPostURL}`, (req, res) => {
     let InputData = req.body.InputData;
     let OutputData = req.body.OutputData;
     res.status(statuscode).send({
-      OutputData,
+      ...OutputData,
       OtherInformation: { InputData },
     });
   } catch (e) {
@@ -99,7 +99,7 @@ router.put(`/${routerPutURL}`, (req, res) => {
     let InputData = req.body.InputData;
     let OutputData = req.body.OutputData;
     res.status(statuscode).send({
-      OutputData,
+      ...OutputData,
       OtherInformation: { InputData },
     });
   } catch (e) {
@@ -124,7 +124,7 @@ router.delete(`/${routerDelete}`, (req, res) => {
     let InputData = req.body.InputData;
     let OutputData = req.body.OutputData;
     res.status(statuscode).send({
-      OutputData,
+      ...OutputData,
       OtherInformation: { InputData },
     });
   } catch (e) {
