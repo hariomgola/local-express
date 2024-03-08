@@ -5,6 +5,7 @@
 const chalk = require("chalk");
 const express = require("express");
 const enviourment = require("./changeEnviournment/enviourment.package.json");
+const cors = require("cors");
 
 // making global variable
 const app = express();
@@ -12,6 +13,7 @@ const PORT = process.env.PORT || enviourment.PORT;
 const expressRouter = require("./router/expressRouter");
 
 // Making use of inbuild application
+app.use(cors());
 app.use(express.json());
 app.use(expressRouter);
 
